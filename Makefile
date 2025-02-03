@@ -1,5 +1,5 @@
 all: build run
 build:
-	zig cc -o shader_renderer shader_renderer.c -lraylib -lm -lpthread -ldl -lrt -lX11
+	cc -o shader_renderer shader_renderer.c -lraylib -lm -lpthread -ldl -lrt -lX11
 run:
 	./shader_renderer
